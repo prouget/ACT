@@ -1,0 +1,14 @@
+{% include 'still/head.html' %}
+{% include 'still/nav.html' %}
+
+<div class="container">
+    <h1>liste etudiant</h1>
+
+    <ul>
+        {% for e in perso %}
+            <li><a href="{{ e.id }}">{{ e.prenom }}</a></li>
+        {% endfor %}
+    </ul>
+</div>
+
+{% include 'still/foot.html' %}
